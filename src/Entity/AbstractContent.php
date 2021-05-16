@@ -33,7 +33,7 @@ abstract class AbstractContent
     private $title;
 
     /**
-     * @ORM\OneToMany(targetEntity="Comment", mappedBy="content")
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="content", fetch="EXTRA_LAZY")
      */
     private $comments;
 
